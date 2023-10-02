@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+
+header{
+display: flex;
+flex-direction: column;
+text-align: center;
+
+
+
+}
+
+nav img{
+    width: 30%;
+    padding-bottom: 1em;
+ 
+}
+
+nav li{
+    list-style: none;
+    background-color: #E2E2E2;
+margin-bottom: 2px;
+}
+
+
+nav h1{
+    padding-bottom: 1em;
+    color: #D87922;
+}
+
+
+main {
+    width: 60%;
+}
