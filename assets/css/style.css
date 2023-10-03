@@ -7,12 +7,13 @@
 header{
 display: flex;
 flex-direction: column;
+width: 100%;
 text-align: center;
-
-
-
 }
-
+nav {
+    width: 50%;
+    background-color: white;
+}
 nav img{
     width: 30%;
     padding-bottom: 1em;
@@ -20,10 +21,14 @@ nav img{
 }
 
 nav li{
+    
     list-style: none;
     background-color: #E2E2E2;
-margin-bottom: 2px;
-}
+    /* margin-bottom: 2px; */
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    }
 
 
 nav h1{
@@ -32,6 +37,165 @@ nav h1{
 }
 
 
-main {
-    width: 60%;
+
+main h2{
+   
+   text-align: center;
+padding: 1em 0;
+}
+main img{
+    width: 80%;
+    /* padding-bottom: 1em; */
+}
+main p{
+    width: 80%;
+    padding-bottom: 1em;
+}
+footer{
+    padding: 1em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: dotted 1px;
+
+
+}
+article{
+    display: none;
+}
+
+/*media querie tablette*/
+
+@media screen and (min-width: 768px){
+    nav{
+   padding: 0 2em;
+       
+    }
+   nav ul{
+    display: flex;
+    justify-content: center;
+
+    }
+   nav li{
+        width: 80%;
+       
+    }
+    article{
+        width: 100%;
+     border-top:dotted 1px;
+     padding: 1em ;
+     display: flex;
+     justify-content: space-around;
+
+
+    }
+    .article-titre{
+    padding-left: 1em;
+    }
+    h3{
+        border-bottom: dotted 1px;
+        width: 100%;
+        padding-bottom: 1em;
+        margin-bottom: 1em;
+       
+    }
+ 
+    
+.article-titre li{
+   
+    list-style-type: decimal;
+}
+.galerie-image{
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 50%;
+}
+.galerie-image img{
+    /* padding-top: 1em; */
+ 
+    width: 40px;
+
+}
+
+
+}
+@media screen and (min-width: 1024px){
+
+    body {
+        background-color: gray;
+    }
+    header, main, footer {
+        width: 60%;
+        margin: auto;
+        background-color: white;
+    }
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 3em;
+        
+
+    }
+
+    header h1{
+        display: flex;
+ 
+        align-items: center;
+        width: 100%;
+    }
+    .logo-text img{
+        width: 50%;
+    }
+    .logo-text{
+        display:flex;
+        flex-direction: row;
+        justify-content: flex-start;
+    
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+       
+
+    }
+    ul li{
+        background-color: white;
+    }
+    main {
+        flex-direction: row;
+    }
+    .partie-gauche{
+  
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 50%;
+        padding-left: 3em;
+  
+    }
+    .partie-gauche img{
+        padding-bottom: 1em;
+    }
+    article {
+        width: 40%;
+    }
+    
+    main{
+        display: flex;
+
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .galerie{
+        padding-top: 5em;
+    }
+ 
 }
