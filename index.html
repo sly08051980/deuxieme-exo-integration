@@ -8,17 +8,19 @@
 </head>
 <body>
     <header>
-       
+        
         <div class="logo-text">
                     <img src="./assets/images/logo.png" alt ="logo">
                     <h1>Déserts du monde</h1>
         </div>
-        <nav>
+        <nav role="navigation" aria-label="Menu principal">
+            <input type="checkbox" name="main-nav" id="main-nav" class="burger-check">
+            <label for="main-nav" class="burger menu"><span></span></label>
           
             <ul> 
-                <li>-ACTUALITE-</li>
-                <li>-GALERIE-</li>
-                <li>-CONTACT-</li>
+                <a href="#"><li>-ACTUALITE-</li></a>
+                <a href="#"><li>-GALERIE-</li></a>
+                <a href="#"><li>-CONTACT-</li></a>
             
             </ul>
         </nav>
