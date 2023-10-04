@@ -4,6 +4,10 @@
     font-size: 15px;
 }
 
+
+
+
+
 header{
 display: flex;
 flex-direction: column;
@@ -11,7 +15,7 @@ width: 100%;
 text-align: center;
 }
 nav {
-    width: 50%;
+ 
     background-color: white;
 }
 nav img{
@@ -19,7 +23,10 @@ nav img{
     padding-bottom: 1em;
  
 }
+nav ul{
 
+    width: 100%;
+}
 nav li{
     
     list-style: none;
@@ -28,7 +35,9 @@ nav li{
     display: block;
     height: 30px;
     line-height: 30px;
+  
     }
+
 
 
 nav h1{
@@ -36,7 +45,10 @@ nav h1{
     color: #D87922;
 }
 
-
+h1{
+    color: #A55122;
+    font-size: 20px;
+}
 
 main h2{
    
@@ -62,6 +74,12 @@ footer{
 }
 article{
     display: none;
+}
+
+.partie-gauche{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*media querie tablette*/
@@ -136,6 +154,8 @@ article{
         justify-content: space-between;
         align-items: center;
         padding-top: 3em;
+        padding-bottom: 2em;
+        border-bottom: dotted 1px;
         
 
     }
@@ -145,7 +165,9 @@ article{
  
         align-items: center;
         width: 100%;
+      
     }
+ 
     .logo-text img{
         width: 50%;
     }
@@ -153,7 +175,11 @@ article{
         display:flex;
         flex-direction: row;
         justify-content: flex-start;
+        margin-left: 2rem;
     
+    }
+    nav{
+        width: 50%;
     }
     nav ul{
         display: flex;
@@ -164,6 +190,10 @@ article{
     }
     ul li{
         background-color: white;
+        
+    }
+    header ul li{
+        font-weight: bold;
     }
     main {
         flex-direction: row;
@@ -174,7 +204,7 @@ article{
         flex-direction: column;
         justify-content: space-between;
         align-items: flex-start;
-        width: 50%;
+        width: 80%;
         padding-left: 3em;
   
     }
@@ -187,6 +217,7 @@ article{
     
     main{
         display: flex;
+        padding-top: 2em;
 
     }
     article{
@@ -197,5 +228,18 @@ article{
     .galerie{
         padding-top: 5em;
     }
- 
+    .galerie-image{
+width: 100%;
+    }
+    h2{
+
+        width: 80%;
+    }
+    /* footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    } */
+
+   
 }
