@@ -118,7 +118,7 @@ nav {
  Suppression de la barre centrale sur le "check"
 ----------------------------------------------*/
 .burger-check:checked + .burger span {
-	height: -1;
+	height: 0;
 	width: 0;
 }
 /*-------------------------------------------------------------------
@@ -215,6 +215,9 @@ footer{
     border-top: dotted 1px;
 
 
+}
+footer img{
+    border:0;width:88px;height:31px
 }
 article{
     display: none;
@@ -342,7 +345,7 @@ article{
     nav{
         padding: unset;
         width: 50%;
-      
+ 
     }
     nav ul{
         
